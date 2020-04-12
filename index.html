@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="header-logo">
+                <a href="#" class="header-logo-link">
+                    <img src="./img/bank.svg" alt="Bank's logo">
+                </a>
+            </div>
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li class="header-item"><a href="#" class="header-link">БАНК</a></li>
+                    <li class="header-item"><a href="#" class="header-link">БИЗНЕС</a></li>
+                    <li class="header-item"><a href="#" class="header-link">ИНВЕСТИЦИИ</a></li>
+                    <li class="header-item"><a href="#" class="header-link">СТРАХОВАНИЕ</a></li>
+                    <li class="header-item"><a href="#" class="header-link">МОБАЙЛ</a></li>
+                    <li class="header-item"><a href="#" class="header-link">ПУТЕШЕСТВИЯ</a></li>
+                    <li class="header-item"><a href="#" class="header-link">РАЗВЛЕЧЕНИЯ</a></li>
+                </ul>
+            </nav>
+            <div class="header-sign-in"><a href="#" class="header-link">ВОЙТИ</a></div>
+        </div>
+    </header>
+    <section class="converter">
+        <h1 class="caption">Конвертер валют онлайн</h1>
+        <div class="converter-wrapper">
+            <div class="main-converter">
+                <p class="converter-caption">У меня есть</p>
+                <div class="currencies from">
+                    <div class="curr-from selected">RUB</div>
+                    <div class="curr-from">USD</div>
+                    <div class="curr-from">EUR</div>
+                    <div class="curr-from">GBP</div>
+                    <div class="rectangle convert-from">
+                        <img src="./img/rectangle-down.svg" alt="down" class="convert-from">
+                        <img src="./img/rectangle-upside.svg" alt="upside">
+                    </div>
+                </div>
+                <div class="summ">
+                    <div>
+                        <input type="number" class="convert-from">
+                    </div>
+                    <div class="selected-currency from">
+                        <span>1 <span>RUB</span> = <span>0.0135</span> <span>USD</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="change">
+                <img src="./img/change.svg" alt="Change">
+            </div>
+            <div class="main-converter">
+                <p class="converter-caption">Хочу приобрести</p>
+                <div class="currencies to">
+                    <div class="curr-to">RUB</div>
+                    <div class="curr-to selected">USD</div>
+                    <div class="curr-to">EUR</div>
+                    <div class="curr-to">GBP</div>
+                    <div class="rectangle convert-to">
+                        <img src="./img/rectangle-down.svg" alt="down" class="convert-to">
+                        <img src="./img/rectangle-upside.svg" alt="upside">
+                    </div>
+                </div>
+                <div class="summ">
+                    <div>
+                        <input type="number" class="convert-to" value="1">
+                    </div>
+                    <div class="selected-currency to">
+                        <span>1 <span>USD</span> = <span>73.8896</span> <span>RUB</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-currency-wrapper">
+            <ul>
+                <li><span class="currency-name">Российский рубль</span><span class="curr">RUB</span></li>
+                <li><span class="currency-name">Доллар США</span><span class="curr">USD</span></li>
+                <li><span class="currency-name">ЕВРО</span><span class="curr">EUR</span></li>
+                <li><span class="currency-name">Фунт стерлингов</span><span class="curr">GBP</span></li>
+                <li><span class="currency-name">Австралийский доллар</span><span class="curr">AUD</span></li>
+                <li><span class="currency-name">Гонконгский доллар</span><span class="curr">HKD</span></li>
+                <li><span class="currency-name">Индонезийская рупия</span><span class="curr">IDR</span></li>
+                <li><span class="currency-name">Израильский шекель</span><span class="curr">ILS</span></li>
+                <li><span class="currency-name">Болгарский лев</span><span class="curr">BGN</span></li>
+                <li><span class="currency-name">Бразильский реал</span><span class="curr">BRL</span></li>
+                <li><span class="currency-name">Венгерский форинт</span><span class="curr">HUF</span></li>
+            </ul>
+            <ul>
+                <li><span class="currency-name">Вон Республики Корея</span><span class="curr">KRW</span></li>
+                <li><span class="currency-name">Датская крона</span><span class="curr">DKK</span></li>
+                <li><span class="currency-name">Индийская рупия</span><span class="curr">INR</span></li>
+                <li><span class="currency-name">Мексиканское песо</span><span class="curr">MXN</span></li>
+                <li><span class="currency-name">Канадский доллар</span><span class="curr">CAD</span></li>
+                <li><span class="currency-name">Тайский бат</span><span class="curr">THB</span></li>
+                <li><span class="currency-name">Китайский юань</span><span class="curr">CNY</span></li>
+                <li><span class="currency-name">Хорватская куна</span><span class="curr">HRK</span></li>
+                <li><span class="currency-name">Новый румынский лей</span><span class="curr">RON</span></li>
+                <li><span class="currency-name">Малайзийский ринггит</span><span class="curr">MYR</span></li>
+                <li><span class="currency-name">Норвежская крона</span><span class="curr">NOK</span></li>
+            </ul>
+            <ul>
+                <li><span class="currency-name">Польский злотый</span><span class="curr">PLN</span></li>
+                <li><span class="currency-name">Сингапурский доллар</span><span class="curr">SGD</span></li>
+                <li><span class="currency-name">Филиппинское песо</span><span class="curr">PHP</span></li>
+                <li><span class="currency-name">Турецкая лира</span><span class="curr">TRY</span></li>
+                <li><span class="currency-name">Исландская крона</span><span class="curr">ISK</span></li>
+                <li><span class="currency-name">Новозеландский доллар</span><span class="curr">NZD</span></li>
+                <li><span class="currency-name">Чешская крона</span><span class="curr">CZK</span></li>
+                <li><span class="currency-name">Шведская крона</span><span class="curr">SEK</span></li>
+                <li><span class="currency-name">Швейцарский франк</span><span class="curr">CHF</span></li>
+                <li><span class="currency-name">Южноафриканский рэнд</span><span class="curr">ZAR</span></li>
+                <li><span class="currency-name">Японская иена</span><span class="curr">JPY</span></li>
+            </ul>
+        </div>
+
+    </section>
+    <div class="loading">Loading</div>
+    <script src="./dist/main.minified.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "bootcamp-m4-zeynal-zeynalli",
+  "version": "1.0.0",
+  "description": "convert currency",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js",
+    "build": "webpack",
+    "build:prod": "webpack --config webpack.prod.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zzeeynall/bootcamp-m4-zeynal-zeynalli.git"
+  },
+  "author": "Zeynal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zzeeynall/bootcamp-m4-zeynal-zeynalli/issues"
+  },
+  "homepage": "https://github.com/Zzeeynall/bootcamp-m4-zeynal-zeynalli#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
