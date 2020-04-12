@@ -184,12 +184,14 @@ class Changer {
             .then(res => {
                 currencyFrom.childNodes[3].innerText = res.rates[convertTo];
             })
+            .catch(err => err)
 
         fetch(`https://api.ratesapi.io/api/latest?base=${convertTo}&symbols=${convertFrom}`)
             .then(res => res.json())
             .then(res => {
                 currencyTo.childNodes[3].innerText = res.rates[convertFrom];
             })
+            .catch(err => err)
         currencyFrom.childNodes[1].innerText = convertFrom;
         currencyFrom.childNodes[5].innerText = convertTo;
         currencyTo.childNodes[1].innerText = convertTo;
@@ -235,6 +237,7 @@ class Calculator {
                 document.querySelector('body').style.backgroundColor = 'white';
                 inputConvertFrom.value = +inputConvertTo.value * res.rates[from];
             })
+            .catch(err => alert('Что-то пошло не так!'));
     }
 
     calcFrom() {
@@ -265,6 +268,7 @@ class Calculator {
                 document.querySelector('body').style.backgroundColor = 'white';
                 inputConvertTo.value = +inputConvertFrom.value * res.rates[to];
             })
+            .catch(err => alert('Что-то пошло не так!'))
     }
 }
 
