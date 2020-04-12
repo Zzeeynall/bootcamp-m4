@@ -103,19 +103,14 @@ class Changer {
     constructor() {}
 
     chageCurrencies(calc) {
-        const inputConvertFrom = document.querySelector('input.convert-from');
-        const inputConvertTo = document.querySelector('input.convert-to');
         const change = document.querySelector('.change');
         const currenciesFrom = document.querySelectorAll('.curr-from');
         const currenciesTo = document.querySelectorAll('.curr-to');
 
         change.addEventListener('click', () => {
-            let value = inputConvertFrom.value;
             let from = '';
             let to = '';
             let some = false;
-            inputConvertFrom.value = inputConvertTo.value;
-            inputConvertTo.value = value;
             currenciesFrom.forEach(cur => {
                 if (cur.classList.contains('selected')) {
                     from = cur.innerText;
@@ -170,8 +165,9 @@ class Changer {
 
             }
             this.changeCurrentCurrency();
+            calc();
         })
-        calc();
+
     }
     changeCurrentCurrency() {
         const currencyFrom = document.querySelector('.selected-currency.from span');
@@ -283,7 +279,7 @@ class Application {
         const calculator = new Calculator();
         calculator.calc();
         calculator.calcCurrency();
-        changer.chageCurrencies(calculator.calc);
+        changer.chageCurrencies(calculator.calcFrom);
         changer.changeCurrentCurrency();
         currency.addSelectedClass(currency.currenciesFrom, calculator.calcFrom, changer.changeCurrentCurrency);
         currency.addSelectedClass(currency.currenciesTo, calculator.calc, changer.changeCurrentCurrency);
